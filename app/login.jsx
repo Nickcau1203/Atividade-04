@@ -2,43 +2,22 @@ import React from 'react';
 import { View, Text, StyleSheet, ScrollView, Pressable } from 'react-native';
 import { Link } from 'expo-router';
 
-export default function TermoDeUso() {
+export default function LoginDeUso() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.title}>Termo</Text>
+      <Text style={styles.title}>Login</Text>
      
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>1. Introdução</Text>
+        <Text style={styles.sectionTitle}>E-mail</Text>
         <Text style={styles.sectionText}>
-          Bem-vindo ao nosso aplicativo. Ao utilizar nossos serviços, você concorda com estes Termo de uso.
+          Coloque seu E-mail completo para receber o código de verificação.
         </Text>
       </View>
      
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>2. Uso do Aplicativo</Text>
+        <Text style={styles.sectionTitle}>Senha</Text>
         <Text style={styles.sectionText}>
-          Você se compromete a usar o aplicativo de forma ética, legal e de acordo com todas as leis e regulamentos aplicáveis.
-        </Text>
-      </View>
-     
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>3. Privacidade</Text>
-        <Text style={styles.sectionText}>
-          Respeitamos sua privacidade. Os dados pessoais são tratados de acordo com nossa Política de Privacidade.
-        </Text>
-      </View>
-     
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>4. Limitação de Responsabilidade</Text>
-        <Text style={styles.sectionText}>
-          Nosso aplicativo é fornecido "como está", sem garantias de qualquer tipo, expressas ou implícitas.
-        </Text>
-      </View>
-     
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>5. Modificações</Text>
-        <Text style={styles.sectionText}>
-          Reservamos o direito de modificar estes Termo a qualquer momento. As alterações serão comunicadas aos usuários.
+            Coloque sua senha para fazer o login, ou crie uma se não tiver.
         </Text>
       </View>
      
