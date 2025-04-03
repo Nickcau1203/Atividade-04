@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView, Pressable } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, Pressable, TextInput } from 'react-native';
 import { Link } from 'expo-router';
 
 export default function LoginDeUso() {
@@ -7,20 +7,9 @@ export default function LoginDeUso() {
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.title}>Login</Text>
      
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>E-mail</Text>
-        <Text style={styles.sectionText}>
-          Coloque seu E-mail completo para receber o código de verificação.
-        </Text>
-      </View>
-     
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Senha</Text>
-        <Text style={styles.sectionText}>
-            Coloque sua senha para fazer o login, ou crie uma se não tiver.
-        </Text>
-      </View>
-     
+      <TextInput style={styles.email} placeholder="E-mail" />
+      <TextInput style={styles.senha} placeholder="Senha" secureTextEntry={true} />
+
       <Link href="/" asChild>
         <Pressable style={styles.button}>
           <Text style={styles.buttonText}>Voltar para Home</Text>
@@ -34,14 +23,14 @@ const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
     padding: 20,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#f17ea1',
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 20,
-    color: '#333',
+    color: '#fff',
   },
   section: {
     marginBottom: 20,
@@ -58,15 +47,31 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 10,
-    color: '#3b5998',
+    color: '#FF1493',
   },
   sectionText: {
     fontSize: 16,
     color: '#666',
     lineHeight: 24,
   },
+  email: {
+    backgroundColor: '#fff',
+    padding: 10,
+    borderRadius: 5,
+    marginBottom: 15,
+    fontSize: 16,
+    color: '#FF1493',
+  },
+  senha: {
+    backgroundColor: '#fff',
+    padding: 10,
+    borderRadius: 5,
+    marginBottom: 20,
+    fontSize: 16,
+    color: '#FF1493',
+  },
   button: {
-    backgroundColor: '#3b5998',
+    backgroundColor: '#FFFFFF',
     paddingVertical: 12,
     paddingHorizontal: 20,
     borderRadius: 5,
@@ -74,7 +79,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   buttonText: {
-    color: '#fff',
+    color: '#f17ea1',
     fontSize: 16,
     textAlign: 'center',
     fontWeight: 'bold',

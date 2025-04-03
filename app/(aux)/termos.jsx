@@ -5,19 +5,19 @@ import { Link } from 'expo-router';
 export default function TermoDeUso() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.title}>Termo</Text>
+      <Text style={styles.title}>Termos de Uso</Text>
      
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>1. Introdução</Text>
         <Text style={styles.sectionText}>
-          Bem-vindo ao nosso aplicativo. Ao utilizar nossos serviços, você concorda com estes Termo de uso.
+          Bem-vindo ao nosso App. Ao utilizar nossos serviços, você concorda com estes Termo de uso.
         </Text>
       </View>
      
       <View style={styles.section}>
-        <Text style={styles.sectionTitle}>2. Uso do Aplicativo</Text>
+        <Text style={styles.sectionTitle}>2. Uso do App</Text>
         <Text style={styles.sectionText}>
-          Você se compromete a usar o aplicativo de forma ética, legal e de acordo com todas as leis e regulamentos aplicáveis.
+          Você se compromete a usar o App de forma ética, legal e de acordo com todas as leis e regulamentos aplicáveis.
         </Text>
       </View>
      
@@ -31,14 +31,14 @@ export default function TermoDeUso() {
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>4. Limitação de Responsabilidade</Text>
         <Text style={styles.sectionText}>
-          Nosso aplicativo é fornecido "como está", sem garantias de qualquer tipo, expressas ou implícitas.
+          Nosso App é fornecido "como está", sem garantias de qualquer tipo, expressas ou implícitas.
         </Text>
       </View>
      
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>5. Modificações</Text>
         <Text style={styles.sectionText}>
-          Reservamos o direito de modificar estes Termo a qualquer momento. As alterações serão comunicadas aos usuários.
+          Reservamos o direito de modificar estes Termo a qualquer momento. As alterações serão comunicadas aos usuários, pelo o E-mail ou pelo App.
         </Text>
       </View>
      
@@ -55,14 +55,14 @@ const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
     padding: 20,
-    backgroundColor: '#f5f5f5',
+    backgroundColor: '#f17ea1',
   },
   title: {
     fontSize: 24,
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 20,
-    color: '#333',
+    color: '#fff',
   },
   section: {
     marginBottom: 20,
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 10,
-    color: '#3b5998',
+    color: '#FF1493',
   },
   sectionText: {
     fontSize: 16,
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
     lineHeight: 24,
   },
   button: {
-    backgroundColor: '#3b5998',
+    backgroundColor: '#FFFFFF',
     paddingVertical: 12,
     paddingHorizontal: 20,
     borderRadius: 5,
@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   buttonText: {
-    color: '#fff',
+    color: '#f17ea1',
     fontSize: 16,
     textAlign: 'center',
     fontWeight: 'bold',
