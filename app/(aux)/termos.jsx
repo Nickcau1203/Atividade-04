@@ -2,15 +2,15 @@ import React from 'react';
 import { View, Text, StyleSheet, ScrollView, Pressable } from 'react-native';
 import { Link } from 'expo-router';
 
-export default function TermosDeUso() {
+export default function TermoDeUso() {
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.title}>Termos de Uso</Text>
+      <Text style={styles.title}>Termo</Text>
      
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>1. Introdução</Text>
         <Text style={styles.sectionText}>
-          Bem-vindo ao nosso aplicativo. Ao utilizar nossos serviços, você concorda com estes termos de uso.
+          Bem-vindo ao nosso aplicativo. Ao utilizar nossos serviços, você concorda com estes Termo de uso.
         </Text>
       </View>
      
@@ -38,7 +38,7 @@ export default function TermosDeUso() {
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>5. Modificações</Text>
         <Text style={styles.sectionText}>
-          Reservamos o direito de modificar estes termos a qualquer momento. As alterações serão comunicadas aos usuários.
+          Reservamos o direito de modificar estes Termo a qualquer momento. As alterações serão comunicadas aos usuários.
         </Text>
       </View>
      

@@ -11,7 +11,8 @@ export default function Home() {
             </Pressable>
         </Link>
 
-        <Link href="/login">Login</Link>
+        <Link href="/login
+        ">Login</Link>
         <Link href="/sobre">Sobre</Link>
         <Link href="/(aux)/termos">Termos</Link>
 
