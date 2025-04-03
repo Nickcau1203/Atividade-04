@@ -7,11 +7,13 @@ export default function Home() {
     <View>
         <Link href="/about" asChild>
             <Pressable style={styles.button}>
-                <Text style={styles.buttonText}>Bora para tela Sobre</Text>
+                <Text style={styles.buttonText}>Bem-Vindo!</Text>
             </Pressable>
         </Link>
 
-        <Link href="/(aux)/termos">Termos de uso</Link>
+        <Link href="/login">Login</Link>
+        <Link href="/sobre">Sobre</Link>
+        <Link href="/(aux)/termos">Termos</Link>
 
     </View>
   );

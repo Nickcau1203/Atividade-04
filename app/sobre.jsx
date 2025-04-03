@@ -1,5 +1,7 @@
-import { View, Text } from 'react-native';
+import React from 'react';
+import { View, Text, StyleSheet, ScrollView, Pressable } from 'react-native';
 import { Link } from 'expo-router';
+
 
 export default function Sobre() {
   return (
@@ -10,3 +12,4 @@ export default function Sobre() {
     </View>
   );
 }
+ 
